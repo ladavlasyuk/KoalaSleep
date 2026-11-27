@@ -1,0 +1,19 @@
+<resources>
+    <color name="moonleaf_web_activity_background">#FFFFFF</color>
+    <color name="moonleaf_web_surface_bg">#FFFFFF</color>
+    <color name="moonleaf_web_loader_color">#000000</color>
+    <style name="MoonleafPageAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/moonleaf_web_fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/moonleaf_web_fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/moonleaf_web_fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/moonleaf_web_fade_out</item>
+    </style>
+
+    <style name="Theme.KoalaSleep.WebPage" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/moonleaf_web_activity_background</item>
+        <item name="android:statusBarColor">@color/moonleaf_web_activity_background</item>
+        <item name="android:navigationBarColor">@color/moonleaf_web_activity_background</item>
+        <item name="android:windowAnimationStyle">@style/MoonleafPageAnimation</item>
+        <item name="android:colorAccent">@color/moonleaf_web_loader_color</item>
+    </style>
+</resources>
